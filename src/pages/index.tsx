@@ -10,10 +10,10 @@ import {
 } from '@heroicons/react/24/outline';
 import { toast } from 'react-hot-toast';
 
-import StrategyCard from '@/components/StrategyCard';
-import SearchForm from '@/components/SearchForm';
-import LoadingSpinner from '@/components/LoadingSpinner';
-import { Strategy, ScanRequest } from '@/types/strategy';
+import StrategyCard from '../components/StrategyCard';
+import SearchForm from '../components/SearchForm';
+import LoadingSpinner from '../components/LoadingSpinner';
+import { Strategy, ScanRequest } from '../types/strategy';
 
 export default function HomePage() {
   const [strategies, setStrategies] = useState<Strategy[]>([]);
