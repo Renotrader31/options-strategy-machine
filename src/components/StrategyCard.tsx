@@ -11,7 +11,7 @@ import {
   CalendarIcon,
   BoltIcon
 } from '@heroicons/react/24/outline';
-import { Strategy } from '@/types/strategy';
+import { Strategy } from '../types/strategy';
 
 interface StrategyCardProps {
   strategy: Strategy;
