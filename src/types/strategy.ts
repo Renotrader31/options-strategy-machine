@@ -13,6 +13,7 @@ export interface Strategy {
   breakEvenPoints?: number[];
   description?: string;
   legs?: StrategyLeg[];
+  greeks?: Greeks;
   timeDecay?: number;
   volatilityImpact?: number;
   currentPrice?: number;
@@ -21,7 +22,7 @@ export interface Strategy {
 
 export interface StrategyLeg {
   type: 'call' | 'put' | 'stock';
-  action: 'buy' | 'sell';
+  action: 'BUY' | 'SELL';  // ← FIXED: Changed to uppercase to match API
   strike?: number;
   expiry?: string;
   quantity: number;
@@ -30,6 +31,13 @@ export interface StrategyLeg {
   gamma?: number;
   theta?: number;
   vega?: number;
+}
+
+export interface Greeks {
+  delta: number;
+  gamma: number;
+  theta: number;
+  vega: number;
 }
 
 export interface ScanRequest {
