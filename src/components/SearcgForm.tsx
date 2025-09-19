@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MagnifyingGlassIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
-import { ScanRequest } from '@/types/strategy';
+import { ScanRequest } from '../types/strategy';
 
 interface SearchFormProps {
   onScan: (request: ScanRequest) => void;
