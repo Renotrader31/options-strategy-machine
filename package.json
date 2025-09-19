@@ -1,0 +1,59 @@
+ 1	{
+     2	  "name": "options-strategy-generator",
+     3	  "version": "1.0.0",
+     4	  "description": "Professional options strategy analysis and recommendation system",
+     5	  "private": true,
+     6	  "scripts": {
+     7	    "dev": "next dev",
+     8	    "build": "next build",
+     9	    "start": "next start",
+    10	    "lint": "next lint",
+    11	    "deploy": "vercel --prod"
+    12	  },
+    13	  "dependencies": {
+    14	    "next": "14.2.14",
+    15	    "react": "18.3.1",
+    16	    "react-dom": "18.3.1",
+    17	    "tailwindcss": "3.4.13",
+    18	    "autoprefixer": "10.4.20",
+    19	    "postcss": "8.4.47",
+    20	    "@headlessui/react": "2.1.9",
+    21	    "@heroicons/react": "2.1.5",
+    22	    "recharts": "2.12.7",
+    23	    "axios": "1.7.7",
+    24	    "swr": "2.2.5",
+    25	    "react-hot-toast": "2.4.1",
+    26	    "framer-motion": "11.11.1",
+    27	    "date-fns": "4.1.0",
+    28	    "clsx": "2.1.1",
+    29	    "lucide-react": "0.447.0"
+    30	  },
+    31	  "devDependencies": {
+    32	    "@types/node": "22.7.4",
+    33	    "@types/react": "18.3.11",
+    34	    "@types/react-dom": "18.3.1",
+    35	    "typescript": "5.6.3",
+    36	    "eslint": "8.57.1",
+    37	    "eslint-config-next": "14.0.4",
+    38	    "concurrently": "^8.2.2"
+    39	  },
+    40	  "keywords": [
+    41	    "options",
+    42	    "trading",
+    43	    "strategy",
+    44	    "analysis",
+    45	    "finance",
+    46	    "polygon-api",
+    47	    "nextjs",
+    48	    "fastapi"
+    49	  ],
+    50	  "author": "Options Strategy Generator",
+    51	  "license": "MIT",
+    52	  "repository": {
+    53	    "type": "git",
+    54	    "url": "https://github.com/yourusername/options-strategy-generator.git"
+    55	  },
+    56	  "engines": {
+    57	    "node": "22.x"
+    58	  }
+    59	}
