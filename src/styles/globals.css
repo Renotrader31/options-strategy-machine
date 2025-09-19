@@ -1,0 +1,123 @@
+ 1	@tailwind base;
+     2	@tailwind components;
+     3	@tailwind utilities;
+     4	
+     5	/* Modern Professional Styling */
+     6	@layer base {
+     7	  html {
+     8	    scroll-behavior: smooth;
+     9	  }
+    10	
+    11	  body {
+    12	    @apply font-sans antialiased bg-slate-50 text-slate-900;
+    13	  }
+    14	}
+    15	
+    16	@layer components {
+    17	  .btn-primary {
+    18	    @apply bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+    19	  }
+    20	
+    21	  .btn-secondary {
+    22	    @apply bg-white hover:bg-slate-50 text-slate-700 font-medium py-2.5 px-5 rounded-lg border border-slate-200 hover:border-slate-300 transition-all duration-200 shadow-sm hover:shadow-md;
+    23	  }
+    24	
+    25	  .card {
+    26	    @apply bg-white rounded-2xl shadow-sm border border-slate-200/60 hover:shadow-md transition-all duration-200;
+    27	  }
+    28	
+    29	  .card-elevated {
+    30	    @apply bg-white rounded-2xl shadow-lg border border-slate-200/60 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+    31	  }
+    32	
+    33	  .card-compact {
+    34	    @apply bg-white rounded-xl border border-slate-200/60 hover:shadow-lg transition-all duration-200 overflow-hidden;
+    35	  }
+    36	
+    37	  .input {
+    38	    @apply block w-full px-4 py-3 bg-white border border-slate-200 rounded-xl shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-200;
+    39	  }
+    40	
+    41	  .select {
+    42	    @apply block w-full px-4 py-3 bg-white border border-slate-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-200;
+    43	  }
+    44	
+    45	  .badge-success {
+    46	    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200;
+    47	  }
+    48	
+    49	  .badge-warning {
+    50	    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200;
+    51	  }
+    52	
+    53	  .badge-danger {
+    54	    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-50 text-red-700 border border-red-200;
+    55	  }
+    56	
+    57	  .badge-info {
+    58	    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200;
+    59	  }
+    60	}
+    61	
+    62	@layer utilities {
+    63	  .text-gradient {
+    64	    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent;
+    65	  }
+    66	
+    67	  .bg-grid-pattern {
+    68	    background-image: 
+    69	      linear-gradient(rgba(100, 116, 139, 0.05) 1px, transparent 1px),
+    70	      linear-gradient(90deg, rgba(100, 116, 139, 0.05) 1px, transparent 1px);
+    71	    background-size: 20px 20px;
+    72	  }
+    73	}
+    74	
+    75	/* Custom animations */
+    76	@keyframes float {
+    77	  0%, 100% { transform: translateY(0px); }
+    78	  50% { transform: translateY(-10px); }
+    79	}
+    80	
+    81	@keyframes pulse-glow {
+    82	  0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.3); }
+    83	  50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.6); }
+    84	}
+    85	
+    86	@keyframes slide-up {
+    87	  from { opacity: 0; transform: translateY(20px); }
+    88	  to { opacity: 1; transform: translateY(0); }
+    89	}
+    90	
+    91	@keyframes expand {
+    92	  from { height: 0; opacity: 0; }
+    93	  to { height: auto; opacity: 1; }
+    94	}
+    95	
+    96	.animate-float {
+    97	  animation: float 6s ease-in-out infinite;
+    98	}
+    99	
+   100	.animate-pulse-glow {
+   101	  animation: pulse-glow 2s ease-in-out infinite;
+   102	}
+   103	
+   104	.animate-slide-up {
+   105	  animation: slide-up 0.5s ease-out;
+   106	}
+   107	
+   108	/* Scrollbar styling */
+   109	::-webkit-scrollbar {
+   110	  width: 6px;
+   111	}
+   112	
+   113	::-webkit-scrollbar-track {
+   114	  @apply bg-slate-100;
+   115	}
+   116	
+   117	::-webkit-scrollbar-thumb {
+   118	  @apply bg-slate-300 rounded-full;
+   119	}
+   120	
+   121	::-webkit-scrollbar-thumb:hover {
+   122	  @apply bg-slate-400;
+   123	}
